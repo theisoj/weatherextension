@@ -12,7 +12,7 @@ export function getWeather(lat: number, lon: number, timezone: string) {
         return {
             current: parseCurrentWeather(data),
             daily: parseDailyWeather(data),
-            // hourly: parseHourlyWeather(data)
+            hourly: parseHourlyWeather(data)
         }
     })
 }
