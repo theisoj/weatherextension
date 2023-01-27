@@ -1,23 +1,36 @@
 {
-  "name": "weatherextension",
-  "displayName": "WeatherExtension",
-  "description": "",
-  "version": "0.1.0",
+  "name": "forecan-saa",
+  "displayName": "Forecan säätiedot",
+  "description": "The VSCode extension made by TheIsoJ.",
+  "version": "1.0.0",
+  "publisher": "theisoj",
   "engines": {
     "vscode": "^1.74.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheIsoJ/weatherextension.git"
   },
   "categories": [
     "Other"
   ],
+  "homepage": "https://finnplace.ml",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheIsoJ/weatherextension/issues"
+  },
+  "keywords": [
+    "forecan säätiedot"
+  ],
   "activationEvents": [
-    "onCommand:weatherextension.getWeather"
+    "onCommand:forecan-saa.searchByCityAndOrMunicipality"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "weatherextension.getWeather",
-        "title": "Hae säätiedot"
+        "command": "forecan-saa.searchByCityAndOrMunicipality",
+        "title": "Forecan säätiedot: Hae säätiedot"
       }
     ]
   },
@@ -27,7 +40,9 @@
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
-    "test": "node ./out/test/runTest.js"
+    "test": "node ./out/test/runTest.js",
+    "bundle": "vsce package",
+    "deploy": "vsce publish"
   },
   "devDependencies": {
     "@types/glob": "^8.0.0",
@@ -41,8 +56,5 @@
     "glob": "^8.0.3",
     "mocha": "^10.1.0",
     "typescript": "^4.9.3"
-  },
-  "dependencies": {
-    "axios": "^1.2.2"
   }
 }
