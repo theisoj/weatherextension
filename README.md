@@ -4,4 +4,4 @@ With this VSCode extension, you can view weather information by the name of the 
 
 ## How to use this extension?
 
-You need to open your command palette by pressins `CTRL+SHIFT+P` and select `Forecan säätiedot: Hae säätiedot` and then type your search term in the input box.
+You need to open your command palette by pressing `CTRL+SHIFT+P` and select `Forecan säätiedot: Hae säätiedot` and then type your search term in the input box.
