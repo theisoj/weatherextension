@@ -2,7 +2,7 @@
   "name": "saatiedot",
   "displayName": "Säätiedot",
   "description": "The VSCode extension made by TheIsoJ.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "theisoj",
   "engines": {
     "vscode": "^1.74.0"
