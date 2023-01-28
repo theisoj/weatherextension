@@ -1,6 +1,6 @@
 {
-  "name": "forecan-saa",
-  "displayName": "Forecan säätiedot",
+  "name": "saatiedot",
+  "displayName": "Säätiedot",
   "description": "The VSCode extension made by TheIsoJ.",
   "version": "1.0.0",
   "publisher": "theisoj",
@@ -15,22 +15,23 @@
     "Other"
   ],
   "homepage": "https://finnplace.ml",
+  "icon": "Säätiedot.png",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/TheIsoJ/weatherextension/issues"
   },
   "keywords": [
-    "forecan säätiedot"
+    "säätiedot"
   ],
   "activationEvents": [
-    "onCommand:forecan-saa.searchByCityAndOrMunicipality"
+    "onCommand:saatiedot.searchByCityAndOrMunicipality"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "forecan-saa.searchByCityAndOrMunicipality",
-        "title": "Forecan säätiedot: Hae säätiedot"
+        "command": "saatiedot.searchByCityAndOrMunicipality",
+        "title": "Säätiedot: Hae säätiedot"
       }
     ]
   },

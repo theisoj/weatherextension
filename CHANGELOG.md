@@ -1,9 +1,9 @@
 # Change Log
 
-All notable changes to the "Forecan säätiedot" extension will be documented in this file.
+## [Released] [v1.0.1]
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+- Renamed extension to only `Säätiedot`
 
-## [Unreleased] [v1.0]
+## [Released] [v1.0]
 
 - Initial release
