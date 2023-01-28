@@ -15,7 +15,7 @@
     "Other"
   ],
   "homepage": "https://finnplace.ml",
-  "icon": "Säätiedot.png",
+  "icon": "saatiedot.png",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/TheIsoJ/weatherextension/issues"
