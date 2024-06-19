@@ -1,5 +1,5 @@
 # Change Log
 
-## [Released] [v1.0]
+## [Released] [v1.1.0]
 
-- The very first release of the now fixed weather extension for the Visual Studio Code.
+- Weather now shows the current weather in the VS Code's webview.

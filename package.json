@@ -1,30 +1,27 @@
 {
   "name": "saatiedot",
   "displayName": "Säätiedot",
-  "description": "The VSCode extension made by TheIsoJ.",
-  "version": "1.0.0",
+  "description": "The VSCode extension made by theisoj.",
+  "version": "1.1.0",
   "publisher": "theisoj",
   "engines": {
-    "vscode": "^1.74.0"
+    "vscode": "^1.90.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheIsoJ/weatherextension.git"
+    "url": "git+https://github.com/theisoj/weatherextension.git"
   },
   "categories": [
     "Other"
   ],
-  "homepage": "https://finnplace.ml",
+  "homepage": "https://github.com/theisoj/weatherextension",
   "icon": "saatiedot.png",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TheIsoJ/weatherextension/issues"
+    "url": "https://github.com/theisoj/weatherextension/issues"
   },
   "keywords": [
     "säätiedot"
-  ],
-  "activationEvents": [
-    "onCommand:saatiedot.searchByCityAndOrMunicipality"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -39,23 +36,13 @@
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile && npm run lint",
-    "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js",
     "bundle": "vsce package",
     "deploy": "vsce publish"
   },
   "devDependencies": {
-    "@types/glob": "^8.0.0",
-    "@types/mocha": "^10.0.1",
-    "@types/node": "16.x",
-    "@types/vscode": "^1.74.0",
-    "@typescript-eslint/eslint-plugin": "^5.45.0",
-    "@typescript-eslint/parser": "^5.45.0",
-    "@vscode/test-electron": "^2.2.0",
-    "eslint": "^8.28.0",
-    "glob": "^8.0.3",
-    "mocha": "^10.1.0",
-    "typescript": "^4.9.3"
+    "@types/node": "^20.14.6",
+    "@types/vscode": "^1.90.0",
+    "typescript": "5.4.5"
   }
 }
