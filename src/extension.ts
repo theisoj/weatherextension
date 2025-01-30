@@ -39,15 +39,17 @@ export function capitalizeFirstLetter(string: string) {
 }
 
 function getWebviewContent(url: string) {
-	return `<!DOCTYPE html>
-	<html lang="fi">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Säätiedot</title>
-	</head>
-	<body style="margin: 0; padding: 0; box-sizing: border-box;">
-		<iframe src="${url}" style="margin: 0; padding: 0; width: 100%; height: 100vh; min-height: 100vh; border: none;"></iframe>
-	</body>
-	</html>`
+	return /*html*/`
+		<!DOCTYPE html>
+		<html lang="fi">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Säätiedot</title>
+		</head>
+		<body style="margin: 0; padding: 0; box-sizing: border-box;">
+			<iframe src="${url}" style="margin: 0; padding: 0; width: 100%; height: 100vh; min-height: 100vh; border: none;"></iframe>
+		</body>
+		</html>
+	`
 }
